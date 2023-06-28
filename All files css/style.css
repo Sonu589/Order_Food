@@ -1,0 +1,476 @@
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                     Order Food Home Page Styling
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------     Top Navbar Styling     ----------------------------------------*/
+
+#menu ul                     /* Navbar List */
+{
+	position:relative;
+	list-Style:none;
+	z-index:1000;
+}
+#menu ul li                   /* Navbar List Items */
+{
+	border-radius:15px;
+	background-color:green;
+	border:1px solid white;
+	width:253.2px;
+	height:45px;
+	text-align:center;
+	line-height:40px;
+	float:left;
+	position:relative;
+}
+#menu ul li a{                 /* Navbar Heading */
+	text-decoration:none;
+	font-size:25px;
+	color:white;
+	display:block;
+}
+#menu ul li a:hover{         /* Navbar Heading Hover Effect */
+	background-color:blue;
+	border-radius:15px;
+	
+}
+#menu ul ul{                 /* Navbar List Setting */
+	position:absolute;
+	display:none;
+}
+#menu ul li:hover > ul{       /* Navbar List Hover Effect */
+	display:block;
+}
+
+/* Top Logo */
+#logo{
+	animation:bounce;
+	animation-duration:3s;
+	animation-iteration-count:infinite;
+	position:absolute;
+    height:90px;
+    width: 90px;
+    top:50px;
+	margin-left:1350px;
+}
+
+#online{
+  animation:backInRight;
+  animation-duration:3s;
+  animation-iteration-count:4;
+  font-size:27px;
+  margin-left:1240px;
+  position:absolute;
+  color: white;
+  font-weight: bolder;
+  top: 150px;
+
+}
+
+/*---------------------------      Home Page Heading     ----------------------------------------------*/
+
+#a{                                     /* Heading */
+	font-family: 'Lobster', cursive;
+	font-size:80px;
+	position:absolute;
+	top:190px;
+	margin-left:20px;
+	margin-right:50px;
+	letter-spacing:9px;
+	word-spacing:5px;
+	text-shadow:4px 4px 5px black;
+	color:orange;
+	animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+	animation-iteration-count:2;
+}
+.btn8 span{                             /* Heading */
+	letter-spacing:9px;
+	word-spacing:5px;
+	font-weight:bold;
+	font-family: 'Lobster', cursive;
+	font-size:80px;
+	position:absolute;
+	top:290px;
+	color:white;
+	text-shadow:4px 4px 5px black;
+	margin-left:150px;
+	color:green;
+	animation: backInLeft; 
+    animation-duration: 2s;
+    animation-iteration-count:2;	
+}
+
+/*--------------------------------    Home Page Top Button Buy Now     --------------------------------*/
+
+.btn8 input{	/* Button Styling */
+	padding:10px;
+	animation: backInLeft; 
+    animation-duration: 2s; 
+	animation-iteration-count:2;
+	margin-left:250px;
+	position:absolute;
+	top:420px;
+	font-weight:bold;
+	font-size:35px;
+	border-radius:20px;
+	background-image:linear-gradient(green,orange);
+}
+.btn8 input:hover{             /* Button Hover Effect Styling */
+	color:white;
+	background:green;
+}
+
+/*------------------------------------    Home Page Slider     ----------------------------------------*/
+
+.mySlides {                  /* Styling Slider */
+	position:relative;
+	display: none;
+	height: 100%;
+	font-family: Arial,Helvetica,sans-serif;
+}
+.mySlides img {          
+	width: 100%;
+	height: 100%;
+}
+.slideshow-container {      
+	overflow: hidden;
+	position: relative;
+	margin: auto;
+	width: 1519px;
+	height: 755px;
+}
+.slide-prev, .slide-next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.4s ease;
+	border-radius: 0 3px 3px 0;
+}
+.slide-next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.slide-prev:hover, .slide-next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+
+/*-----------------------------------    Slider down page   ------------------------------------------*/
+
+#hi img{                  /* Image Setting Height And Width */
+	position:relative;
+	width:1515px;
+	height:550px;
+}
+.content1{             /* Setting content of div h1,h4,p */
+	position:absolute;
+	left:200px;
+	top:810px;
+	
+}
+
+/* Styling heading divide into two parts */
+
+.content1 h1{            /* Styling heading */
+	line-height:170px;
+	font-size:40px;
+	animation: backInLeft; 
+    animation-duration: 5s;
+}
+.content1 span{          /* Styling heading but change colour */
+	color:#d65106;
+}
+.content1 h4{            /* Small heading Just of Big Heading */
+	margin-left:6.5px;
+	font-size:22px;
+	font-family: 'Rubik', sans-serif;
+}
+.content1 p{              /* After Paragraph Styling */
+	margin-left:6.5px;
+	font-size:22px;
+	margin-right:700px;
+	font-family: 'Rubik', sans-serif;
+}
+
+/*----------------------------------    Zooming Effect Image   ----------------------------------------*/
+
+.img2{                   /* Setting Position div */
+	position:absolute;
+	left:1009px;
+	top:880px;
+}
+.img3{                   /* Setting position Image */
+	border:0px solid red;
+	width:450px;
+	height:270px;
+	margin-bottom:20px;
+	transition:transform 2s;
+	position:relative;
+	overflow:hidden;
+	box-shadow:15px 15px 0px 0px orange;
+}
+.img3:hover{            /* Hover Effect On Image */
+	transform: scale(1.2);
+	box-shadow:4px 4px 5px 6px yellow;
+}
+.img3 img{
+	width:450px;
+	height:270px;
+}
+
+/*------------------------------   Div content include h1, p ,icon  -------- --------------------------*/
+
+.content{
+	color:#fff;
+	background-color:rgba(0,0,0,0.5);
+	position:absolute;
+	left:0;
+	top:-100;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+	transition:all 2s;
+	padding:20px;
+}
+.img2:hover .content{    /* Hover Effect on div */
+	top:0;
+}
+.content h1{
+	font-size:40px;
+	color:yellow;
+	text-align:center;
+}
+.content p{
+	font-size:30px;
+	text-align:center;
+}
+
+/* ---------------------------  Icons Display Div Styling  ------------------------------------------- */
+.material-icons {vertical-align:-14%;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+/* Facebook */
+
+.fa-facebook{
+    background: #3B5998;
+     color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* Google */
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+/* Linkedin */
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+/* Youtube */
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #125688;
+  color: white;
+  background-image:linear-gradient(magenta,yellow);
+}
+
+/*------------------------------------      Start Qt       --------------------------------------------*/
+
+.mob img{
+	position:relative;
+	width:1519px;
+	height:500px;
+	background-color:rgba(0,0,0,0.2);
+	/*clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);*/
+	clip-path: polygon(50% 0, 100% 16%, 100% 75%, 50% 100%, 0 70%, 0 16%);
+}
+.col2 .lead p{
+	line-height: 60px;
+	left:300px;
+	right:300px;
+	font-size:50px;
+	position:absolute;
+    top:1500px;
+	color:white;
+	padding:auto;
+	animation:bounceInRight;
+	animation-duration: 30s;
+}
+.lead p span{
+	animation:bounceInRight;
+	animation-duration: 30s;
+	margin-left:600px;
+	font-size:35px;
+	font-weight:bold;
+}
+
+/* End Qt */
+
+/*---------------------------       Styling For Top Categories       ----------------------------------*/
+
+#a1{                       /* Main Heading Top Categories */
+	text-align:center;
+	font-size:85px;
+	font-family:italic;
+	text-shadow:4px 4px 5px yellow;
+	word-spacing:10px;
+	letter-spacing:3px;
+	font-style:italic;
+	transition:transform 2s;
+}
+#a1:hover{
+	transform:scale(1.3);
+}
+.food{                         /* Top Categories Zooming Effect with Title and Star Rating */
+	border:0px solid black;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+.food1{
+	border:0px solid red;
+	width:390px;
+	height:310px;
+	float:left;
+	margin-top:35px;
+	margin-bottom:35px;
+	box-shadow:5px 5px 5px 5px gray;
+	transition:transform 2s;
+}
+.food1:hover{
+	transform: scale(1.1);
+}
+.food1 img{
+	width:100%;
+	height:250px;
+}
+.title1 p{          /* Zooming Effect Image Title */
+	border:0px solid white;
+	text-align:center;
+	font-size:30px;
+	font-family: 'Rubik', sans-serif;
+	font-weight:bold;
+}
+/* ----------------------------------    Footer Part     ---------------------------------------------*/
+
+/* Footer Code */
+.footer{
+	height:200px;
+	width:100%;
+	background-color:black;
+	display:flex;
+	justify-content: space-around;
+	align-items:center;
+}
+.footerb{
+	height:180px;
+	width:300px;
+	float:left;
+	color:white;
+	text-align:center;
+	font-size:20px;
+}
+.footerb b{
+	font-size:30px;
+}
+
+#im{
+	float:left;
+    display:flex;
+	justify-content:center;
+}
+
+
+
+/* Code For Order */
+#ord{
+	font-size:70px;
+	color:cyan;
+	transform:rotate(0deg);
+    transition-property:all;
+    transition-duration:6s;
+    font-weight:bold;
+    text-align:center;
+    
+}
+
+
+#tab{
+	display:flex;
+	justify-content:center;
+}
+table tr td h3{
+	font-size:30px;
+	padding:30px;
+	margin-right:250px;
+}
+table tr td input{
+	font-size:25px;
+	border-radius:8px;
+	border:4px solid green;
+	font-weight:bold;
+	color:blue;
+}
+table tr td h3:hover{
+	color:brown;
+}
+table tr td input:hover{
+	border:4px solid brown;
+}
+#gen{
+	font-size:20px;
+}
+table tr td select option{
+	font-size:30px;
+}
+select{
+	font-size:25px;
+	width:330px;
+	border-radius:9px;
+	border:4px solid green;
+}
+#bo{
+	background-blend-mode:multiply;
+	background-size:cover;
+}
+

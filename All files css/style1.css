@@ -1,0 +1,316 @@
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+/*   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------                                        About Us Page Code
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------    Styling for navbar    ----------------*/
+/*---------------------------------     Top Navbar Styling     ----------------------------------------*/
+
+#menu ul                     /* Navbar List */
+{
+	position:relative;
+	list-Style:none;
+	z-index:1000;
+}
+#menu ul li                   /* Navbar List Items */
+{
+	border-radius:15px;
+	background-color:green;
+	border:1px solid white;
+	width:253.2px;
+	height:45px;
+	text-align:center;
+	line-height:40px;
+	float:left;
+	position:relative;
+}
+#menu ul li a{                 /* Navbar Heading */
+	text-decoration:none;
+	font-size:25px;
+	color:white;
+	display:block;
+}
+#menu ul li a:hover{         /* Navbar Heading Hover Effect */
+	background-color:blue;
+	border-radius:15px;
+	
+}
+#menu ul ul{                 /* Navbar List Setting */
+	position:absolute;
+	display:none;
+}
+#menu ul li:hover > ul{       /* Navbar List Hover Effect */
+	display:block;
+}
+.material-icons {vertical-align:-14%;  /* Icons Display */
+}
+/*-- Styling for about us page include wave background, paragraph, heading and zooming effect images  -*/
+
+/* Main Heading */
+.our{                 
+	letter-spacing:8px;
+	word-spacing:9px;
+    margin-left:520px;
+	font-size:90px;
+	color:black;
+	font-family: 'Lobster', cursive;
+}
+.wave2{
+	background:#26de81;
+	height:500px;
+}
+.wave2 .our{
+	position:absolute;
+	top:60px;
+}
+.wave1{
+	background:#26de81;
+}
+
+/* paragraph Styling */
+#p1{
+	font-family: 'Courgette', cursive;  
+	position:absolute;
+	top:290px;
+	text-align: justify;
+	margin-left:65px;
+	margin-right:790px;
+	font-size:20px;	
+}
+
+/* Image Styling */
+#ball{                           
+	position:absolute;
+	top:275px;
+	width:600px;
+	height:350px;
+	margin-left:850px;
+	animation-name:Sample;
+	animation-duration:4s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+}
+@Keyframes Sample{
+	0%{border-radius:4%;}
+	10%{border-radius:10%;}
+	50%{border-radius:50%;}
+	100{border-radius:0%;}
+}
+
+
+
+/*----------------------      About us 2nd page Our Team Styling    -----------------------------------*/
+
+/* Main Heading our team */
+.team{                    
+	font-family: 'Lobster', cursive;    
+	letter-spacing:8px;
+	word-spacing:9px;
+    margin-left:520px;
+	text-align:center;
+	font-size:90px;
+	position:absolute;
+	top:850px;
+}
+.wave3{
+	background:#FFD732;
+	height:200px;
+}
+.wave4{
+	background:#FFD732;
+}
+
+/* Zooming effect Images Of Our Team */
+
+.to{
+	border:0px solid black;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+.to1{
+	background-color:white;
+	border:0px solid red;
+	width:370px;
+	height:320px;
+	float:left;
+	margin-top:80px;
+	margin-bottom:20px;
+	box-shadow:5px 5px 5px 5px gray;
+	transition:transform 2s;
+}
+.to1:hover{
+	transform: scale(1.1);
+}
+.to1 img{
+	width:100%;
+	height:240px;
+}
+.starr2{
+	text-align:center;
+	font-size:30px;
+}
+.title2 p{
+	border:0px solid white;
+	text-align:center;
+	font-size:35px;
+	font-weight:bold;
+}
+.checked{           /* Star Rating Color */
+	color:orange;
+}
+
+
+/*--------------------        About us 3rd page Our Clients Styling      ------------------------------*/
+
+/* Main Heading Our Clients */
+#client{             
+	font-family: 'Lobster', cursive;
+	letter-spacing:8px;
+	word-spacing:9px;
+    margin-left:520px;
+	text-align:center;
+	font-size:90px;
+	position:absolute;
+	top:1830px;
+	animation:rubberBand;
+	animation-duration:2s;
+	animation-iteration-count:infinite;
+}
+.wave5{
+	background:#FFA4E3;
+}
+.wave6{
+	background:#FFA4E3;
+}
+
+/* Paragraph Styling */
+#ball2{           
+	margin-left:50px;
+	margin-right:50px;
+	font-family: 'Courgette', cursive;
+	position:absolute;
+	top:2070px;
+	text-align: justify;
+	font-size:20px;	
+}
+
+/*  Our Clients Image Zooming Effects Styling */
+.cop{
+	border:0px solid black;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+.cop1{
+	background-color:white;
+	border:0px solid red;
+	width:370px;
+	height:320px;
+	float:left;
+	margin-top:80px;
+	margin-bottom:20px;
+	box-shadow:5px 5px 5px 5px gray;
+	transition:transform 2s;
+}
+.cop1:hover{
+	transform: scale(1.1);
+}
+.cop1 img{
+	width:100%;
+}
+
+/*--------------------        About us 4th page Awards Styling      ------------------------------*/
+
+/* Main Heading Awards */
+#award{                              
+	font-family: 'Lobster', cursive;
+	letter-spacing:8px;
+	word-spacing:9px;
+    margin-left:520px;
+	text-align:center;
+	font-size:90px;
+	position:absolute;
+	top:3030px;
+	animation:heartBeat;
+	animation-duration:2s;
+	animation-iteration-count:infinite;
+}
+
+.wave7{
+	background: #26de81;
+}
+.wave8{
+	background: #26de81;
+}
+
+ /* Paragraph Styling */
+#ball4{      
+	margin-left:50px;
+	margin-right:50px;
+	font-family: 'Courgette', cursive;
+	position:absolute;
+	top:3280px;
+	text-align: justify;
+	font-size:20px;	
+}
+
+/* Awards Image Zooming Effect Styling */
+
+.top{
+	border:0px solid black;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+.top1{
+	border:0px solid red;
+	width:370px;
+	height:290px;
+	float:left;
+	margin-top:20px;
+	margin-bottom:20px;
+	box-shadow:5px 5px 5px 5px gray;
+	transition:transform 2s;
+	background-color:white;
+}
+.top1:hover{
+	transform: scale(1.1);
+}
+.top1 img{
+	width:100%;
+	height:225px;
+}
+.title p{
+	border:0px solid white;
+	text-align:center;
+	font-size:25px;
+	font-weight:bold;
+}
+/* ----------------------------------    Footer Part     ---------------------------------------------*/
+
+/* Footer Code */
+.footer{
+	height:200px;
+	width:100%;
+	background-color:black;
+	display:flex;
+	justify-content: space-around;
+	align-items:center;
+}
+.footerb{
+	height:180px;
+	width:300px;
+	float:left;
+	color:white;
+	text-align:center;
+	font-size:20px;
+}
+.footerb b{
+	font-size:30px;
+}
+
